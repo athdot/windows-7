@@ -6,15 +6,15 @@
  function goFullscreen(id) {
   var element = document.getElementById(id);       
   if (element.mozRequestFullScreen) {
-          document.getElementById("page").setAttribute('style','width: 100%; height: 100vh; position:absolute; top: 0; left:0;');
+          document.getElementById("page").setAttribute('style','');
     element.mozRequestFullScreen();
   } else if (element.webkitRequestFullScreen) {
-          document.getElementById("page").setAttribute('style','width: 100%; height: 100vh; position:absolute; top: 0; left:0;');
+          document.getElementById("page").setAttribute('style','');
     element.webkitRequestFullScreen();
   }  
 }
   var myWindow = document.getElementById('pAra');
-myWindow.onkeyup = function(e){
+myWindow.onkeypress = function(e){
     if(e.keyCode === 27){
         window.location = ('about:blank')
     }
