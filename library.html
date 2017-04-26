@@ -1,0 +1,20 @@
+<body onresize="wOw()">
+<style>
+.grad{
+    background: -webkit-linear-gradient(white, lightblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, lightblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, lightblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, lightblue); /* Standard syntax */
+}
+</style>
+<div style="width: 100%; height: 30px; background-color: lightblue; position:fixed; top:0; left: 0; border-bottom:1px solid rgba(0,0,255,0.2);" class="grad"></div>
+<div style="width: 100%; height: 50px; position:fixed; bottom:0; left:0; background-color:rgba(0,0,255,0.1); border-top:1px solid rgba(0,0,255,0.2);"></div>
+<div  style="width: 30%; height: 10px; position:absolute; top:30; left: 0; border-right: 1px solid rgba(0,0,255,0.1);" id="leftside">
+<script>
+document.getElementById('leftside').setAttribute('style', 'width: 30%; height: '+(window.innerHeight-80)+'px; position:absolute; top:30; left: 0; border-right: 1px solid rgba(0,0,255,0.1);');
+function wOw(){
+document.getElementById('leftside').setAttribute('style', 'width: 30%; height: '+(window.innerHeight-80)+'px; position:absolute; top:30; left: 0; border-right: 1px solid rgba(0,0,255,0.1);');
+}
+</script>
+</div>
+</body>
