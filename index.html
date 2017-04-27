@@ -6,10 +6,8 @@
  function goFullscreen(id) {
   var element = document.getElementById(id);       
   if (element.mozRequestFullScreen) {
-          document.getElementById("page").setAttribute('style','');
     element.mozRequestFullScreen();
   } else if (element.webkitRequestFullScreen) {
-          document.getElementById("page").setAttribute('style','');
     element.webkitRequestFullScreen();
   }  
 }
